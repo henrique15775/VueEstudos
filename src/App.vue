@@ -5,6 +5,7 @@
   <LifeCycle />
   <Pessoa />
   <Form />
+  <Picture />
 </div>
   
   </template>
@@ -15,6 +16,7 @@
   import LifeCycle from './components/LifeCycle.vue'
   import Pessoa from './components/Pessoa.vue'
   import Form from './components/Form.vue'
+  import Picture from './components/Picture.vue'
 
   export default {
     name: 'App',
@@ -22,7 +24,8 @@
       HelloWorld,
       LifeCycle,
       Pessoa,
-      Form
+      Form,
+      Picture
     }
   }
 </script>
