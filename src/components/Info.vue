@@ -9,6 +9,9 @@
       <li>Python</li>
     </ul>
     <p v-if="1<2">1 É MENOR Q 2</p>
+  <div>
+    <button @click="showEmail">Clica</button>
+  </div>
     <p v-show="mostrar_email"> O email é: {{ email }} </p>
     <p>Link Google -> <a v-bind:href="meu_link" target="_blank">Basta Clicar aqui</a></p>
 </div>
@@ -20,9 +23,14 @@
    data() {
      return {
        esta_trabalhando: false,
-       mostrar_email: true,
+       mostrar_email: false,
        email: "123@gmail.com",
        meu_link: "https://google.com"
+     }
+   },
+   methods:{
+     showEmail(){
+       this.mostrar_email = !this.mostrar_email
      }
    }
  }
