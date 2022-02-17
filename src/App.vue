@@ -6,6 +6,7 @@
   <Pessoa />
   <Form />
   <Picture />
+  <Header />
 </div>
   
   </template>
@@ -17,7 +18,7 @@
   import Pessoa from './components/Pessoa.vue'
   import Form from './components/Form.vue'
   import Picture from './components/Picture.vue'
-
+  import Header from './components/Header.vue'
   export default {
     name: 'App',
     components: {
@@ -25,7 +26,19 @@
       LifeCycle,
       Pessoa,
       Form,
-      Picture
+      Picture,
+      Header
     }
   }
 </script>
+
+<style>
+  body{
+    color: white;
+    background-color: #333;
+  }
+  a{
+    color:red;
+  }
+ 
+</style>
