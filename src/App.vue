@@ -7,6 +7,7 @@
   <Form />
   <Picture />
   <Header />
+  <MultiplosEventos />
 </div>
   
   </template>
@@ -19,16 +20,21 @@
   import Form from './components/Form.vue'
   import Picture from './components/Picture.vue'
   import Header from './components/Header.vue'
+  import MultiplosEventos from './components/MultiplosEventos.vue'
+
+
+
   export default {
     name: 'App',
     components: {
-      HelloWorld,
-      LifeCycle,
-      Pessoa,
-      Form,
-      Picture,
-      Header
-    }
+    HelloWorld,
+    LifeCycle,
+    Pessoa,
+    Form,
+    Picture,
+    Header,
+    MultiplosEventos
+}
   }
 </script>
 
