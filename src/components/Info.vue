@@ -7,7 +7,7 @@
       <li v-for="(tech, index) in backend_technologies" v-bind:key="index"> {{ tech }} </li>
     </ul>
     <ul>
-      <li v-for="(tech, id) in frontend_technologies" v-bind:key="id"> {{ tech.nome }}</li>
+      <li v-for="tech in frontend_technologies" v-bind:key="tech.id"> {{ tech.nome }}</li>
     </ul>
     <p v-if="1<2">1 É MENOR Q 2</p>
   <div>
