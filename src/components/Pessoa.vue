@@ -3,7 +3,7 @@
 <div>
 
     <h2> Essa é a descrição da pessoa: {{ nome }}</h2>
-   <Info />
+   <Info compEmail="joao@gmail.com" />
 </div>
  
 </template>

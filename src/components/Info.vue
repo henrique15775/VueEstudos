@@ -13,7 +13,7 @@
   <div>
     <button @click="showEmail">Clica</button>
   </div>
-    <p v-show="mostrar_email"> O email é: {{ email }} </p>
+    <p v-show="mostrar_email"> O email é: {{ compEmail }} </p>
     <p>Link Google -> <a v-bind:href="meu_link" target="_blank">Basta Clicar aqui</a></p>
 </div>
 </template>
@@ -40,6 +40,8 @@
           nome:"Javascript"
        }]
      }
+   },props:{
+     compEmail: String
    },
    methods:{
      showEmail(){
