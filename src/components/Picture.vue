@@ -1,6 +1,6 @@
 <template>
   <img :src="avatar" :alt="descricao">
-  <MudarImagem @mudar-Imagem="mudarImagem" />
+  <MudarImagem @mudar-Imagem="trocarImagem" />
 </template>
 
 
@@ -18,7 +18,7 @@ export default{
   },
   methods:{
     trocarImagem(){
-
+      this.avatar = './reactLogo.jfif';
     }
   }
 }

@@ -1,9 +1,10 @@
 <template>
-  <ul >
+  <ul>
     <li>A1</li>
      <li>A1</li>
       <li>A1</li>
        <li>A1</li>
+       <li v-if="esta_logado"> <a href="#" > Meu Perfil </a></li>
   </ul>
 </template>
 <style scoped>
@@ -14,6 +15,7 @@
 </style>
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
+    props: ["esta_logado"]
   }
 </script>

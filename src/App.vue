@@ -6,7 +6,7 @@
   <Pessoa />
   <Form />
   <Picture />
-  <Header />
+  <Header :esta_logado="true" />
   <MultiplosEventos />
 </div>
   
